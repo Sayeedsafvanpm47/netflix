@@ -1,0 +1,60 @@
+
+.row{
+          margin-left: 20px;
+          color: #fff;
+          background-color: #111;
+          height: auto;
+      
+         
+        
+}
+.posters{
+         
+          padding: 20px;
+          display: flex;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          margin: 20px;
+
+}
+.poster{
+          max-height: 250px;
+          margin-right: 20px;
+          width: 300px;
+          transition: transform 1s ease;
+     
+          
+}
+.poster:hover{
+          transform: scale(1.05);
+          animation-duration: 5s;
+          box-shadow: 0 0 10px rgba(81, 0, 0, 0.5);
+}
+.posters::-webkit-scrollbar{
+          display: none;
+          width: 2px;
+}
+.smallPoster{
+          max-height:140px;
+          margin-right: 10px;
+          transition: transform 1s ease;
+       
+}
+.smallPoster:hover{
+          transform: scale(1.05);
+          animation-duration: 5s;
+          box-shadow: 0 0 10px rgba(81, 0, 0, 0.5);     
+}
+.title{
+          margin-left: 20px;
+          
+}
+.movieTitle{
+          font-size: 18px;
+          font-weight: 800;
+          color: #a7a0a0;
+}
+.movieDetails{
+          color: #a7a0a0cf;
+          line-height: 0.3;
+}

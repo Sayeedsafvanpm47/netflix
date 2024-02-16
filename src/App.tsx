@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Posts from "./Components/Posts/Posts"
+import Navbar from "./Components/Header/Navbar"
+import { Originals,Comedy } from "./urls"
+import '../src/App.css'
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    
+    <div className="theme container-flex" >
+ <Navbar/>
+
+<Posts title="Netflix Originals" isSmall={false} url={Originals}/>
+<Posts title="Comedy" url={Comedy} isSmall ={true}/>
+<Posts title="Comedy" url={Comedy} isSmall ={true}/>
+
+
+ 
+
+    </div>
+  
+   
   )
 }
 

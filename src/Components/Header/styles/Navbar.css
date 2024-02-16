@@ -1,0 +1,53 @@
+.rightSection{
+         position: fixed;
+       right: 250px;
+         width: 60px;
+         margin: auto;
+}
+.leftSection{
+          position: fixed;
+          left: 20px;
+}
+.navigation{
+          margin-top: 20px;
+}
+.paraText{
+          margin-right: 20px;
+          margin-top:20px;
+}
+.paraContainer{
+          margin-right: -10px;
+}
+.btn{
+          margin:10px
+}
+.avatar{
+          height: 40px;
+          width: 40px;
+          
+}
+.paraHover{
+          color: white;
+          transition: color 0.3s ease, transform 2s ease;
+}
+.paraHover:hover{
+          color: red;
+          transform:scale(1.19) ;
+          animation-duration: 20s;
+}
+.logoImg{
+          height: 40px;
+          width:150px;
+          margin-top: 15px;
+}
+.logo{
+        
+          transition: color 0.3s ease, transform 2s ease;    
+}
+.logo:hover{
+          transform:scale(1.10) ;
+          animation-duration: 20s;     
+}
+.mainContainer{
+background-color: #111 !important;
+}
